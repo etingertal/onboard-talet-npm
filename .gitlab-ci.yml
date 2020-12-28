@@ -24,3 +24,6 @@ build:
     - ./jfrog rt bp gitlabci-npm-artifactory $CI_JOB_ID
   only:
     - main
+
+include:
+  - template: Dependency-Scanning.gitlab-ci.yml
